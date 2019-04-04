@@ -480,19 +480,46 @@ a[href^=tel] {
   display: flex;
   justify-content: center;
 }
-
+#slideshowq {
+  width: 100%;
+}
 /* Hide the images by default */
 .mySlides {
   display: none;
   overflow: hidden;
   width: inherit;
 }
-.mySlides > img {
+.slee1 {
+  height: 431px;
+  background-image: url(../image/sharp3.jpg);
+  background-size: cover;
+  -webkit-filter: brightness(0.7);
+  filter: brightness(0.7);
+      background-position: 50% 50%;
+}
+.slee2 {
+  height: 431px;
+  background-image: url(../image/sharp2.jpg);
+  background-size: cover;
+  -webkit-filter: brightness(0.7);
+  filter: brightness(0.7);
+      background-position: 50% 50%;
+}
+.slee3 {
+  height: 431px;
+  background-image: url(../image/sharp1.jpg);
+  background-size: cover;
+  -webkit-filter: brightness(0.7);
+  filter: brightness(0.7);
+      background-position: 50% 50%;
+}
+/* .mySlides > img {
   width: 100%;
+  background-size: cover;
   height: 431px;
   -webkit-filter: brightness(0.7);
   filter: brightness(0.7);
-}
+} */
 
 /* Next & previous buttons */
 .prev, .next {
