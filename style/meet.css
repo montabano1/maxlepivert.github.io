@@ -1,0 +1,76 @@
+.meet {
+  margin-top: 50px;
+}
+.fullbio {
+  height: 300px;
+  display: flex !important;
+  width: 800px !important;
+  overflow: auto;
+}
+.meetnav {
+  background: green;
+  height: 100px;
+  width: 100px;
+  margin: 20px;
+}
+.meetimg {
+  height: 300px;
+  margin: 0 auto;
+}
+.meetimgcontainer {
+  min-width: 300px;
+}
+.meetslidecontainer {
+  width: 800px;
+  margin: 0 auto;
+}
+.meetnavcontainer {
+  width: 500px;
+  margin: 0 auto;
+}
+.meetName {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 35px;
+}
+.meetJob {
+  text-align: center;
+  font-size: 22px;
+}
+.meetDescription {
+  margin: 20px 40px;
+}
+.meetInfo {
+  min-width: 500px;
+}
+
+.meetmobilecontainer {
+  display: flex;
+}
+.meetNamemobile {
+  font-size: 25px;
+}
+.meetJobmobile {
+  font-size: 18px;
+}
+.meetDescriptionmobile {
+  margin: 5px 0 50px 20px;
+}
+
+@media only screen and (max-width: 812px) {
+  .meetmobile {
+    display: block;
+    margin-top: 50px;
+  }
+  .meet {
+    display: none;
+  }
+}
+@media only screen and (min-width: 813px) {
+  .meetmobile {
+    display: none;
+  }
+  .meet {
+    display: block;
+  }
+}
