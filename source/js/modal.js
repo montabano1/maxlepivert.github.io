@@ -14,28 +14,9 @@ function openModal(a, b, c, d, e, f) {
   $('.modalPrice').text(c[0][1].split(' ')[0]);
   $('.sizeModal').text(e);
 
-  if(f == 'cutthumbs') {
+  if(f) {
     $('.slideshowthumb').hide();
-    $('.cutthumbs').css('display', 'flex');
-  } else if(f == 'picthumbs'){
-    $('.slideshowthumb').hide();
-    $('.picthumbs').css('display', 'flex');
-    $('.thumbcaption').show();
-  } else if(f == 'cosrdthumbs'){
-    $('.slideshowthumb').hide();
-    $('.cosrdthumbs').css('display', 'flex');
-    $('.thumbcaption').show();
-  } else if(f == 'cossqthumbs'){
-    $('.slideshowthumb').hide();
-    $('.cossqthumbs').css('display', 'flex');
-    $('.thumbcaption').show();
-  } else if(f == 'cossetrdthumbs'){
-    $('.slideshowthumb').hide();
-    $('.cossetrdthumbs').css('display', 'flex');
-    $('.thumbcaption').show();
-  } else if(f == 'cossetsqthumbs'){
-    $('.slideshowthumb').hide();
-    $('.cossetsqthumbs').css('display', 'flex');
+    $('.'+f).css('display', 'flex');
     $('.thumbcaption').show();
   } else {
     $('.slideshowthumb').hide();

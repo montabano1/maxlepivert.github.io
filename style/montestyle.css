@@ -48,6 +48,10 @@
   display: flex;
   flex-wrap: wrap;
 }
+.tum12thumbs {
+  display: flex;
+  flex-wrap: wrap;
+}
 .cosrdthumbs {
   display: flex;
   flex-wrap: wrap;
