@@ -18,6 +18,9 @@
     font-family: 'PlayfairDisplayRegular';
     src: url('../style/fonts/Playfair_Display/PlayfairDisplay-Regular.ttf');
 }
+.hotmax {
+  image-orientation: from-image;
+}
 .allAwards {
   cursor: pointer;
 }
