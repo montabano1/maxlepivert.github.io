@@ -38,8 +38,8 @@ function openModal(a, b, c, d, e, f) {
     $('.cossetsqthumbs').css('display', 'flex');
     $('.thumbcaption').show();
   } else {
-    $('.cutthumbs').hide();
-
+    $('.slideshowthumb').hide();
+    $('.thumbcaption').hide();
   }
 }
 
