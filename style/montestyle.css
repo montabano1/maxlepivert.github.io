@@ -60,6 +60,54 @@
   display: flex;
   flex-wrap: wrap;
 }
+.stkncthumbs {
+  display: flex;
+  flex-wrap: wrap;
+}
+.stkeqthumbs {
+  display: flex;
+  flex-wrap: wrap;
+}
+.stkgfthumbs {
+  display: flex;
+  flex-wrap: wrap;
+}
+.stkrodthumbs {
+  display: flex;
+  flex-wrap: wrap;
+}
+.srvncthumbs {
+  display: flex;
+  flex-wrap: wrap;
+}
+.srveqthumbs {
+  display: flex;
+  flex-wrap: wrap;
+}
+.srvgfthumbs {
+  display: flex;
+  flex-wrap: wrap;
+}
+.srvrodthumbs {
+  display: flex;
+  flex-wrap: wrap;
+}
+.appncthumbs {
+  display: flex;
+  flex-wrap: wrap;
+}
+.appeqthumbs {
+  display: flex;
+  flex-wrap: wrap;
+}
+.appgfthumbs {
+  display: flex;
+  flex-wrap: wrap;
+}
+.approdthumbs {
+  display: flex;
+  flex-wrap: wrap;
+}
 .cosrdthumbs {
   display: flex;
   flex-wrap: wrap;
