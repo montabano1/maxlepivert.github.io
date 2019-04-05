@@ -15,61 +15,31 @@ function openModal(a, b, c, d, e, f) {
   $('.sizeModal').text(e);
 
   if(f == 'cutthumbs') {
+    $('.slideshowthumb').hide();
     $('.cutthumbs').css('display', 'flex');
-    $('.picthumbs').hide();
-    $('.cosrdthumbs').hide();
-    $('.cossqthumbs').hide();
-    $('.cossetrdthumbs').hide();
-    $('.cossetsqthumbs').hide();
-    $('.thumbcaption').hide();
   } else if(f == 'picthumbs'){
+    $('.slideshowthumb').hide();
     $('.picthumbs').css('display', 'flex');
     $('.thumbcaption').show();
-    $('.cutthumbs').hide();
-    $('.cosrdthumbs').hide();
-    $('.cossetrdthumbs').hide();
-    $('.cossetsqthumbs').hide();
-    $('.cossqthumbs').hide();
   } else if(f == 'cosrdthumbs'){
+    $('.slideshowthumb').hide();
     $('.cosrdthumbs').css('display', 'flex');
     $('.thumbcaption').show();
-    $('.picthumbs').hide();
-    $('.cutthumbs').hide();
-    $('.cossqthumbs').hide();
-    $('.cossetrdthumbs').hide();
-    $('.cossetsqthumbs').hide();
   } else if(f == 'cossqthumbs'){
+    $('.slideshowthumb').hide();
     $('.cossqthumbs').css('display', 'flex');
     $('.thumbcaption').show();
-    $('.picthumbs').hide();
-    $('.cutthumbs').hide();
-    $('.cosrdthumbs').hide();
-    $('.cossetrdthumbs').hide();
-    $('.cossetsqthumbs').hide();
   } else if(f == 'cossetrdthumbs'){
+    $('.slideshowthumb').hide();
     $('.cossetrdthumbs').css('display', 'flex');
     $('.thumbcaption').show();
-    $('.picthumbs').hide();
-    $('.cutthumbs').hide();
-    $('.cossqthumbs').hide();
-    $('.cosrdthumbs').hide();
-    $('.cossetsqthumbs').hide();
   } else if(f == 'cossetsqthumbs'){
+    $('.slideshowthumb').hide();
     $('.cossetsqthumbs').css('display', 'flex');
     $('.thumbcaption').show();
-    $('.picthumbs').hide();
-    $('.cutthumbs').hide();
-    $('.cossqthumbs').hide();
-    $('.cosrdthumbs').hide();
-    $('.cossetrdthumbs').hide();
   } else {
     $('.cutthumbs').hide();
-    $('.cosrdthumbs').hide();
-    $('.cossqthumbs').hide();
-    $('.cossetrdthumbs').hide();
-    $('.cossetsqthumbs').hide();
-    $('.picthumbs').hide();
-    $('.thumbcaption').hide();
+
   }
 }
 
