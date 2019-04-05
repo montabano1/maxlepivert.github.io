@@ -5764,8 +5764,11 @@
 <script type="text/javascript">
 $(document).ready(function(){
 	$('#menu').slicknav();
-	$('.lazy').Lazy({visibleOnly: true});
-});
+	$('.lazy').Lazy({
+		visibleOnly: true,
+		combined: true,
+	  delay: 5000});
+	});
 </script>
 <script type="text/javascript" src="source/js/isotope.js"></script>
 <script type="text/javascript" src="source/js/filtering.js"></script>
