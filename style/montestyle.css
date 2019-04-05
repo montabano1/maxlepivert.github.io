@@ -52,6 +52,14 @@
   display: flex;
   flex-wrap: wrap;
 }
+.tum20thumbs {
+  display: flex;
+  flex-wrap: wrap;
+}
+.tum30thumbs {
+  display: flex;
+  flex-wrap: wrap;
+}
 .cosrdthumbs {
   display: flex;
   flex-wrap: wrap;
