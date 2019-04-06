@@ -21,6 +21,9 @@
 .hotmax {
   image-orientation: from-image;
 }
+.hotalan {
+  image-orientation: from-image;
+}
 .allAwards {
   cursor: pointer;
 }
