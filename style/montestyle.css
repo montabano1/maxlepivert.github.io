@@ -22,7 +22,7 @@
   image-orientation: from-image;
 }
 .hotalan {
-  image-orientation: from-image;
+  transform: rotate(90deg)
 }
 .allAwards {
   cursor: pointer;
