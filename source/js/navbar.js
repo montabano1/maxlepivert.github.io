@@ -91,9 +91,9 @@ function contactus() {
 
 var sliden = 0;
 function addSlides(n) {
-	$('.customcontainer').find('.custom' + (1 + (sliden % 3))).hide();
-	$('.customcontainer').find('.custom' + (1+ (((sliden + n)+3) % 3))).fadeIn();
-	$('.customcontainer').find('.custom' + (1+ (((sliden + n)+3) % 3))).css('display', 'flex');
-	sliden = (sliden + n + 3) % 3;
+	$('.customcontainer').find('.custom' + (1 + (sliden % 2))).hide();
+	$('.customcontainer').find('.custom' + (1+ (((sliden + n)+2) % 2))).fadeIn();
+	$('.customcontainer').find('.custom' + (1+ (((sliden + n)+2) % 2))).css('display', 'flex');
+	sliden = (sliden + n + 2) % 2;
 
 }
