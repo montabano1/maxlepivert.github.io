@@ -21,9 +21,6 @@
 .hotmax {
   image-orientation: from-image;
 }
-.hotalan {
-  transform: rotate(90deg)
-}
 .allAwards {
   cursor: pointer;
 }
