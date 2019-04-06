@@ -175,10 +175,10 @@ $('.type-button').on( 'click', function() {
   $('.quicksearch').val('');
 
   $("#slider-range").slider({
-    values: [0, 300]
+    values: [0, 3000]
   });
   $("#min_price").val(0);
-  $("#max_price").val(300);
+  $("#max_price").val(3000);
 
   // get group key
   var $buttonGroup = $this.parents('.button-group');
