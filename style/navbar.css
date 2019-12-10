@@ -147,6 +147,61 @@ margin-top: 45px;
   cursor: pointer;
 }
 
+.dropdownnWEB {
+  float: left;
+  overflow: hidden;
+  list-style: none;
+}
+
+/* Dropdown button */
+.dropdownnWEB .dropbtnWEB {
+  border: none;
+  outline: none;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+  padding: 10px 30px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Add a red background color to navbar links on hover */
+.navbarr a:hover, .dropdownnWEB:hover .dropbtnWEB {
+  background-color: #ddd;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdownn-contentWEB {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 180px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 3;
+  list-style: none;
+  margin-top: 45px;
+  padding-inline-start: 0px;
+  flex-direction: column !important;
+}
+
+/* Links inside the dropdown */
+.dropdownn-contentWEB a {
+  float: none;
+  color: black;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdownn-contentWEB > li {
+  font-family: 'Arial';
+  font-weight: bold;
+}
+
+.dropdownn-contentWEB a:hover {
+  background-color: #ddd;
+  cursor: pointer;
+}
+
 .faqTitle {
   text-align: center;
   font-size: 40px;

@@ -23,6 +23,14 @@ $('.dropdownnFAQ').hover(function() {
 	$('.dropdownn-contentFAQ').hide();
 });
 
+$('.dropdownnWEB').hover(function() {
+	$('.dropdownn-contentWEB').css("display", "flex");
+	$('.dropdownn-contentWEB').css("flex-direction", "row");
+	$('.dropdownn-contentWEB').css("list-style", "none");
+}, function() {
+	$('.dropdownn-contentWEB').hide();
+});
+
 function showFAQ() {
 	$('.postheader').hide();
 	$('.products-all').hide();
