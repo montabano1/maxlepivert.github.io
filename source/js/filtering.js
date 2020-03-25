@@ -11,7 +11,7 @@ function clearfilters() {
     }
   });
   $("#min_price").val(0);
-  $("#max_price").val(300);
+  $("#max_price").val(3000);
   $('.aboutusmenucontainer').hide();
 	$(".type-select").val('');
 	$(".type-select").trigger('change');
@@ -36,7 +36,7 @@ function menuFunction(s) {
   $('.products-all').show();
 	$('.quicksearch').val('');
   $("#min_price").val(0);
-  $("#max_price").val(300);
+  $("#max_price").val(3000);
 	$("#select-filter").val(s);
 	$('#' + s.slice(1) + '-button').trigger('click');
 	$('#' + s.slice(1) + '-button').show();
@@ -61,6 +61,32 @@ function menuFunction(s) {
     $('.numberofitems').text(' (' + $grid.data('isotope').filteredItems.length + ')');
   }
 }
+function menuPriceFunction(s) {
+  $('.products-all').show();
+	$('.quicksearch').val('');
+	$("#select-filter").val(s);
+	$('#allitems-button').trigger('click');
+	$('#allitems-button').show();
+  $("#min_price").val(0);
+  $("#max_price").val(parseInt(s));
+  $('.aboutusmenucontainer').hide();
+	$('#allitems-button').show();
+  $('.dropdownn-content').toggle();
+  $('#under' + s + '-button').show();
+  $('#under' + s + '-button').trigger('click');
+  $('.postheader').hide();
+	$('.grid').removeClass('hidden');
+	$('#all-items').removeClass('hidden');
+  $('#products-header').show();
+  if(s == '') {
+    $('#products-header').text('All Items');
+    $('.numberofitems').text(' (' + $grid.data('isotope').filteredItems.length + ')');
+  } else {
+    $('#products-header').text("All Items");
+    $('.numberofitems').text(' (' + $grid.data('isotope').filteredItems.length + ')');
+  }
+  $('.grid').isotope();
+}
 
 function showNoItems() {
   $('.noItems').show();
@@ -81,9 +107,9 @@ var filterFns = {
     var number = $( this ).find('.price').text().split('$');
     return ((parseInt( number[0], 10 ) >= 100 && parseInt( number[0], 10 ) < 200) || (parseInt(number[number.length-1], 10) < 200 && parseInt(number[number.length-1], 10) >= 100));
   },
-  numberLessThan100: function() {
+  numberLessThan25: function() {
     var number = $( this ).find('.price').text().split('$');
-    return ((parseInt( number, 10 ) < 100) || (parseInt(number[number.length-1], 10) < 200));
+    return (parseInt( number, 10 ) < 25);
   },
   plzwork: function() {
     var min = $("#min_price").val();
@@ -144,7 +170,7 @@ $('#dropbtn').on( 'click', function() {
     $('.dropdownn-content').toggle();
   	$('.quicksearch').val('');
     $("#min_price").val(0);
-    $("#max_price").val(300);
+    $("#max_price").val(3000);
     filters = {};
     $('.grid').isotope({filter: function() {
 
@@ -216,6 +242,14 @@ $('.type-button').on( 'click', function() {
 
 $('.price-button').on( 'click', function() {
   var $this = $(this);
+  $('.quicksearch').val('');
+
+  $("#slider-range").slider({
+    values: [0, $this.val()]
+  });
+  $("#min_price").val(0);
+  $("#max_price").val($this.val());
+
   // get group key
   var $buttonGroup = $this.parents('.button-group');
   var filterGroup = $buttonGroup.attr('data-filter-group');
@@ -229,7 +263,6 @@ $('.price-button').on( 'click', function() {
 
     var searchResult = qsRegex ? $this.text().match( qsRegex ) : true;
     for ( var prop in filters ) {
-
       var filter = filters[ prop ];
       // use function if it matches
       filter = filterFns[ filter] || filter;
@@ -242,14 +275,10 @@ $('.price-button').on( 'click', function() {
         break;
       }
     }
-    if($('.type-buttons').find('.is-checked').val() != 'allitems') {
-      return isMatched;
-    } else {
-      return searchResult && isMatched;
-    }
+    return isMatched;
   }});
+  $('#products-header').text("All Items");
   $('.numberofitems').text(' (' + $grid.data('isotope').filteredItems.length + ')');
-
   if ( $grid.data('isotope').filteredItems.length == 0) {
     showNoItems();
   } else {removeNoItems();}
@@ -260,7 +289,7 @@ $('.type-select').on( 'change', function() {
   var $this = $(this);
   $('.quicksearch').val('');
   $("#min_price").val(0);
-  $("#max_price").val(300);
+  $("#max_price").val(3000);
   // get group key
   var filterGroup = $this.attr('data-filter-group');
   filters[ filterGroup ] = $this.context.value;
@@ -474,6 +503,7 @@ $("#min_price,#max_price").on("paste keyup", function () {
   $("#slider-range").slider({
     values: [min_price_range, max_price_range]
   });
+
 });
 
 
@@ -482,8 +512,8 @@ $(function () {
     range: true,
     orientation: "horizontal",
     min: 0,
-    max: 300,
-    values: [0, 300],
+    max: 3000,
+    values: [0, 3000],
     step: 1,
 
     slide: function (event, ui) {
