@@ -373,8 +373,11 @@
 						<li>
 					    <a class='show-all-items-small' onclick="menuFunction('.allitems')"  >Show All Items</a>
 							<ul>
-						 	 <li><a class='final-item' onclick="menuFunction('.acrylicawards')"  >Acrylic Awards</a></li>
- 					 		</ul>
+					      <li><a class='final-item' onclick="menuPriceFunction('25')"  >Under $25</a></li>
+								<li><a class='final-item' onclick="menuPriceFunction('50')"  >Under $50</a></li>
+								<li><a class='final-item' onclick="menuPriceFunction('75')"  >Under $75</a></li>
+
+					    </ul>
 					  </li>
 					  <li>
 					    <a >Awards <span onclick="menuFunction('.awards')" class='allAwards'>(all)</span> </a>
@@ -1006,7 +1009,9 @@
 					<button class="button type-button" id='wine-button' data-filter=".wine">Wine Items</button>
 					<button class="button type-button" id='whiskey-button' data-filter=".whiskey">Whiskey Items</button>
 					<button class="button type-button" id='beer-button' data-filter=".beer">Beer Items</button>
-
+					<button class="button price-button" value='25' id='under25-button' data-filter="plzwork">Under $25</button>
+					<button class="button price-button" value='50' id='under50-button' data-filter="plzwork">Under $50</button>
+					<button class="button price-button" value='75' id='under75-button' data-filter="plzwork">Under $75+</button>
 		    </div>
 		  </div>
 		</div>
@@ -1038,9 +1043,9 @@
 			<div class='sortbycontainer'>
 				<div class="sortbyTitle">Sort By:</div>
 				<div class="sortbyOptions button-group">
-					<button class='sortbyAsc sortButton button price-button' onclick="sortPriceAsc()"><span>Price:</span> <span>Low to High</span> </button>
+					<button class='sortbyAsc sortButton button' onclick="sortPriceAsc()"><span>Price:</span> <span>Low to High</span> </button>
 					<span class='sortSpace'></span>
-					<button class='sortbyDec sortButton button price-button' onclick="sortPriceDes()"><span>Price:</span><span>High to Low </span></button>
+					<button class='sortbyDec sortButton button' onclick="sortPriceDes()"><span>Price:</span><span>High to Low </span></button>
 				</div>
 			</div>
 
