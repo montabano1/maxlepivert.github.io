@@ -16,7 +16,6 @@ window.onscroll = function() {myFunction()};
 var navbar = document.getElementById("scrollstay");
 var filters = document.getElementById("filters");
 var grid = document.getElementById("stickygrid");
-console.log(filters);
 // Get the offset position of the navbar
 var stickymenu = navbar.offsetTop;
 
@@ -28,7 +27,6 @@ function myFunction() {
     filters.classList.add("stickyfilter");
     grid.classList.add("stickygrid");
     var filterwidth = filters.offsetWidth
-    console.log(filterwidth)
     grid.style.left = `${filterwidth}px`
   } else {
     navbar.classList.remove("sticky");
