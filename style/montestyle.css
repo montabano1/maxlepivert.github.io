@@ -169,6 +169,11 @@
   width: 79%;
   padding-left: 30px;
   margin-top: 140px;
+
+}
+.stickygrid {
+  position: sticky;
+  
 }
 .socialicon {
   display: inline-block;
