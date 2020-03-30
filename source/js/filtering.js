@@ -1,6 +1,7 @@
 function scrollToShop() {
-  var elmnt = document.getElementById("products-header");
+  var elmnt = document.getElementById("pricebuttons");
   elmnt.scrollIntoView();
+  window.scrollBy(0, -100);
 }
 function clearfilters() {
 
@@ -60,6 +61,7 @@ function menuFunction(s) {
     $('#products-header').text($('#' + s.slice(1) + '-button').text());
     $('.numberofitems').text(' (' + $grid.data('isotope').filteredItems.length + ')');
   }
+  scrollToShop();
 }
 function menuPriceFunction(s) {
   $('.products-all').show();
