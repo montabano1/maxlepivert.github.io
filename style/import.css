@@ -183,11 +183,12 @@
   justify-content: center;
   width: 200px;
   height:200px;
-  background-image: url(../image/logo2.gif);
+
 }
 
 .txthover>img{
 	max-width:100%;
+  object-fit: contain;
 
 }
 .txthover:hover .txtcontent{
