@@ -41,17 +41,25 @@
   width: 50px;
 }
 .hoverthumbs {
-  background: rgba(12,12,12,.7);
+
 }
 .thumbpicqv {
   height: 100px;
   width: 100px;
+}
+.thumbpicqv2 {
+  height: 65px;
+  width: 65px;
 }
 .picthumbs {
   display: flex;
   flex-wrap: wrap;
 }
 .tum12thumbs {
+  display: flex;
+  flex-wrap: wrap;
+}
+.tum15thumbs {
   display: flex;
   flex-wrap: wrap;
 }
@@ -131,6 +139,14 @@
   opacity: .3;
   cursor: pointer;
 }
+.thumbpicqv2:hover {
+  opacity: .3;
+  cursor: pointer;
+}
+.cantfindspan {
+  text-align: center;
+  width: 800px;
+}
 .thumbqv:hover {
   opacity: .3;
   cursor: pointer;
@@ -173,7 +189,7 @@
 }
 .stickygrid {
   position: sticky;
-  
+
 }
 .socialicon {
   display: inline-block;
