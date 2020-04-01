@@ -35,8 +35,8 @@
   cursor: pointer;
 }
 .modalImg {
-  max-height: 500px;
-  max-width:500px;
+  max-height: 400px;
+  max-width:300px;
   width:100%;
 }
 .modalInfo {
