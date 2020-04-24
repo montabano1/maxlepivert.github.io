@@ -41,8 +41,29 @@
   cursor: pointer;
 }
 
+.dropdownn2 {
+  float: left;
+  overflow: hidden;
+  list-style: none;
+}
+
+/* Dropdown button */
+.dropdownn2 .dropbtn2 {
+  border: none;
+  outline: none;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+  padding: 10px 30px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
 /* Add a red background color to navbar links on hover */
 .navbarr a:hover, .dropdownn:hover .dropbtn {
+  background-color: #ddd;
+}
+.navbarr a:hover, .dropdownn2:hover .dropbtn2 {
   background-color: #ddd;
 }
 
@@ -54,7 +75,7 @@ background-color: #f9f9f9;
 min-width: 160px;
 box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 z-index: 3;
-left: 8%;
+left: 25%;
 list-style: none;
 margin-top: 45px;
 }
@@ -83,6 +104,44 @@ margin-top: 45px;
 
 /* Add a grey background color to dropdown links on hover */
 .dropdownn-content a:hover {
+  background-color: #ddd;
+}
+.dropdownn-content2 {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 3;
+  left: 38%;
+  list-style: none;
+  margin-top: 45px;
+}
+
+/* Links inside the dropdown */
+.dropdownn-content2 a {
+  float: none;
+  color: black;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdownn-content2 > li {
+  font-family: 'Arial';
+  font-weight: bold;
+}
+.dropdownn-content2 > li > ul {
+  list-style: none;
+  padding-left: 0;
+  font-family: 'Arial';
+  font-weight: lighter;
+}
+.dropdownn-content2 > li > ul > li>  a {
+  padding-top: 0;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdownn-content2 a:hover {
   background-color: #ddd;
 }
 /* The dropdown container */

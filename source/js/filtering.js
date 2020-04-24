@@ -26,6 +26,7 @@ function clearfilters() {
 	$('.aboutuscontainer').hide();
 	$('.contactuscontainer').hide();
 	$('.dropdownn-content').hide();
+	$('.dropdownn-content2').hide();
 	$('.grid').removeClass('hidden');
   $('.products-all').show();
 	$('#all-items').removeClass('hidden');
@@ -43,7 +44,8 @@ function menuFunction(s) {
 	$('#' + s.slice(1) + '-button').show();
   $('.aboutusmenucontainer').hide();
 	$('#allitems-button').show();
-  $('.dropdownn-content').toggle();
+  $('.dropdownn-content').hide();
+  $('.dropdownn-content2').hide();
   $('#all-prices-button').click();
   $('#' + s.slice(1) + '-button').prop('value').split(' ').forEach(function(el){
     $('#' + el + '-button').show();
@@ -73,7 +75,8 @@ function menuPriceFunction(s) {
   $("#max_price").val(parseInt(s));
   $('.aboutusmenucontainer').hide();
 	$('#allitems-button').show();
-  $('.dropdownn-content').toggle();
+  $('.dropdownn-content').hide();
+  $('.dropdownn-content2').hide();
   $('#under' + s + '-button').show();
   $('#under' + s + '-button').trigger('click');
   $('.postheader').hide();
@@ -170,6 +173,37 @@ $('#dropbtn').on( 'click', function() {
 
     // reset filters
     $('.dropdownn-content').toggle();
+  	$('.quicksearch').val('');
+    $("#min_price").val(0);
+    $("#max_price").val(3000);
+    filters = {};
+    $('.grid').isotope({filter: function() {
+
+      var isMatched = true;
+      var $this = $(this);
+
+      var searchResult = qsRegex ? $this.text().match( qsRegex ) : true;
+      for ( var prop in filters ) {
+        var filter = filters[ prop ];
+        // use function if it matches
+        filter = filterFns[ filter] || filter;
+        // test each filter
+        if ( filter ) {
+          isMatched = isMatched && $(this).is( filter );
+        }
+        // break if not matched
+        if ( !isMatched ) {
+          break;
+        }
+      }
+      return isMatched;
+    }});
+});
+
+$('#dropbtn2').on( 'click', function() {
+
+    // reset filters
+    $('.dropdownn-content2').toggle();
   	$('.quicksearch').val('');
     $("#min_price").val(0);
     $("#max_price").val(3000);

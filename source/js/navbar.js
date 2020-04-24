@@ -15,6 +15,13 @@ $('.dropdownn').hover(function() {
 }, function() {
 	$('.dropdownn-content').hide();
 });
+$('.dropdownn2').hover(function() {
+	$('.dropdownn-content2').css("display", "flex");
+	$('.dropdownn-content2').css("flex-direction", "row");
+	$('.dropdownn-content2').css("list-style", "none");
+}, function() {
+	$('.dropdownn-content2').hide();
+});
 $('.dropdownnFAQ').hover(function() {
 	$('.dropdownn-contentFAQ').css("display", "flex");
 	$('.dropdownn-contentFAQ').css("flex-direction", "row");
