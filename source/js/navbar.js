@@ -41,7 +41,7 @@ $('.dropdownnWEB').hover(function() {
 function showFAQ() {
 	window.scrollTo({
 	  top: 0,
-	  // behavior: 'smooth',
+	  behavior: 'smooth',
 	});
 	$('.postheader').hide();
 	$('.products-all').hide();
