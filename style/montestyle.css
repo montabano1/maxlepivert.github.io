@@ -158,13 +158,13 @@
 }
 .footer {
   height: 33px;
-  background-color: darkgrey;
+  background-color: black;
   display: flex;
   justify-content: center;
-  margin-top: 200px;
 }
 .footermessage {
   margin-top: 5px;
+  color: white;
 }
 
 #filters {
@@ -383,10 +383,27 @@
   }
 
   .quicksearch {
-    top: 80px;
+    top: 55px;
     left: 30px;
     height: 40px;
     padding: 10px;
+  }
+  .quoteme {
+    top: 55px;
+    right: 30px;
+    height: 40px;
+    padding: 10px;
+    color: Gray;
+    position: absolute;
+    z-index: 999;
+    border: 3px solid gray;
+    border-radius: 3px;
+    width: 20%;
+    text-align: center;
+  }
+  .quoteme > span {
+    position: relative;
+    top: -4px;
   }
 }
 @media screen and (max-width:812px) {
@@ -924,4 +941,43 @@ a[href^=tel] {
 }
 .sortSpace {
   margin: 0 10px
+}
+
+.footers {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footerCol1 {
+  margin-top: 10px;
+  padding: 20px;
+  width: 25%;
+  background-color: black;
+  font-family: "Poppins",sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.footerCol1 > span {
+  color: White;
+  font-size: 14pt;
+  font-weight: 400;
+}
+
+.footerCol1 > a {
+  padding-top: 10px;
+  font-size: 12px;
+  color: White;
+}
+.footerCol1 > a:hover {
+  cursor: pointer;
+}
+
+.footerCol1 > ul > li {
+  display: table-row;
+}
+
+.footerCol1 > a > i {
+  font-size: 16px;
 }

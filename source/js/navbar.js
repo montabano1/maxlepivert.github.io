@@ -39,6 +39,10 @@ $('.dropdownnWEB').hover(function() {
 });
 
 function showFAQ() {
+	window.scrollTo({
+	  top: 0,
+	  // behavior: 'smooth',
+	});
 	$('.postheader').hide();
 	$('.products-all').hide();
 	$('.aboutusmenucontainer').show();
@@ -46,6 +50,10 @@ function showFAQ() {
 	$('.faq').show();
 }
 function showMEET() {
+	window.scrollTo({
+	  top: 0,
+	  // behavior: 'smooth',
+	});
 	$('.postheader').hide();
 	$('.products-all').hide();
 	$('.aboutusmenucontainer').show();

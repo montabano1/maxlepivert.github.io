@@ -24,15 +24,15 @@ function myFunction() {
   if (window.pageYOffset >= stickymenu) {
 
     navbar.classList.add("sticky");
-    filters.classList.add("stickyfilter");
-    grid.classList.add("stickygrid");
-    var filterwidth = filters.offsetWidth
-    grid.style.left = `${filterwidth}px`
+    //filters.classList.add("stickyfilter");
+    // grid.classList.add("stickygrid");
+    // var filterwidth = filters.offsetWidth
+    // grid.style.left = `${filterwidth}px`
   } else {
     navbar.classList.remove("sticky");
-    filters.classList.remove("stickyfilter");
-    grid.classList.remove("stickygrid");
-    grid.style.left = "0px"
+    // filters.classList.remove("stickyfilter");
+    // grid.classList.remove("stickygrid");
+    // grid.style.left = "0px"
   }
 }
 })
