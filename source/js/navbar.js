@@ -46,6 +46,7 @@ function showFAQ() {
 	$('.postheader').hide();
 	$('.products-all').hide();
 	$('.aboutusmenucontainer').show();
+	$('.comingsoon').hide();
 	$('.meettheteam').hide();
 	$('.faq').show();
 }
@@ -57,8 +58,23 @@ function showMEET() {
 	$('.postheader').hide();
 	$('.products-all').hide();
 	$('.aboutusmenucontainer').show();
+	$('.comingsoon').hide();
 	$('.faq').hide();
 	$('.meettheteam').show();
+	$('.slick-prev').trigger('click');
+}
+
+function showCOMINGSOON() {
+	window.scrollTo({
+	  top: 0,
+	  // behavior: 'smooth',
+	});
+	$('.postheader').hide();
+	$('.products-all').hide();
+	$('.aboutusmenucontainer').show();
+	$('.comingsoon').show();
+	$('.faq').hide();
+	$('.meettheteam').hide();
 	$('.slick-prev').trigger('click');
 }
 

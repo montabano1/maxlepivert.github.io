@@ -1,11 +1,13 @@
 .meet {
   margin-top: 50px;
+  display: flex;
 }
 .fullbio {
-  height: 300px;
   display: flex !important;
   width: 800px !important;
-  overflow: auto;
+  padding: 20px;
+  margin: auto;
+  border-bottom: 3px;
 }
 .meetnav {
   background: green;

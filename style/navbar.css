@@ -265,6 +265,20 @@ margin-top: 45px;
   cursor: pointer;
 }
 
+.comingsoon {
+  height: 500px;
+  display: flex;
+}
+.comingsoonTitle {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 40%;
+  font-family: 'Arial';
+  font-weight: bold;
+  font-size: 50px;
+}
+
 .faqTitle {
   text-align: center;
   font-size: 40px;
