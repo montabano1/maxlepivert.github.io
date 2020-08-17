@@ -555,13 +555,25 @@ a[href^=tel] {
 
 .bigwelcome1  {
   font-family: CinzelRegular;
-    max-width: 500px;
+    width: 100%;
     font-size: 60px;
     line-height: 56px;
     display: inline-block;
     position: absolute;
     color: white;
     top: 27%;
+    text-align: center;
+}
+
+.bigwelcome2  {
+  font-family: CinzelRegular;
+    width: 100%;
+    font-size: 60px;
+    line-height: 56px;
+    display: inline-block;
+    position: absolute;
+    color: white;
+    top: 40%;
     text-align: center;
 }
 
@@ -718,11 +730,12 @@ a[href^=tel] {
   justify-content: center;
 }
 .customslide {
-  margin: 100px 0;
+  width: 100%;
+  height: 431px;
 }
 .customslide > img {
-  height: 540px;
-  width: 480px;
+  height: 100%;
+  width: 50%;
 }
 
 .customprev, .customnext {
@@ -754,10 +767,33 @@ a[href^=tel] {
 .customprev:hover, .customnext:hover {
   background-color: rgba(0,0,0,0.8);
 }
+.covidContainer {
+  background-color: #E3E3E3;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+.covidinfo1 {
+  width: 100%;
+  text-align: center;
+  font-size: 45px;
+  margin-top: 37px;
+  padding: 20px;
+}
+.covidinfo2 {
+  width: 100%;
+  text-align: center;
+  font-size: 32px;
+  margin-top: 10px;
+  padding: 20px;
+}
+
 .custominfo {
   background-color: #E3E3E3;
-  height: 540px;
-  width: 440px;
+  height: 100%;
+  width: 50%;
   display: flex;
   flex-direction: column;
 }
@@ -765,14 +801,14 @@ a[href^=tel] {
   width: 100%;
   text-align: center;
   font-size: 35px;
-  margin-top: 67px;
+  margin-top: 37px;
   padding: 20px;
 }
 .custominfo2 {
   width: 100%;
   text-align: center;
   font-size: 22px;
-  margin-top: 30px;
+  margin-top: 20px;
   padding: 20px;
 }
 .custominfo3 {
